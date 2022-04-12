@@ -1,0 +1,400 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+
+
+/* >>>>>>>>>>>>>>                       NAVEGADOR RESPONSIVE                        <<<<<<<<<<<<<<<<<<<<<<< */
+
+header {
+    background-color: rgba(28, 82, 59, 0.767);
+
+}
+
+
+h2 {
+    text-align: center;
+}
+#menuresp {
+    display: none;
+
+}
+
+header label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 8px;
+
+
+}
+
+
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: solid 1px white;
+
+}
+
+.menu li {
+    flex-grow: 1;
+    border: solid 1px white;
+    
+
+
+}
+
+.menu li a {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(15, 21, 27);
+    text-align: center; 
+} 
+
+
+/* >>>>> EFECTOS <<<<<< */
+
+label:hover {
+    background: rgb(0, 0, 0, 0.3);
+
+}
+
+.menu li:hover {
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.menu li a:hover {
+    color: rgb(38, 248, 143);
+}
+
+
+@media (max-width: 750px) {
+    header label {
+        display: block;
+
+    }
+
+    .menu {
+        position: absolute;
+        width: 70%;
+        background-color: rgba(28, 82, 59);
+        font-size: small;
+        margin-left: -70%;
+
+
+    }
+
+    .menu ul {
+        flex-direction: column;
+
+
+    }
+
+    .menu li {
+        border: 1px solid white;
+
+    }
+
+
+    #menuresp:checked~.menu {
+        margin: 0
+    }}
+
+
+    /* <<<<<<< PAGINA PLAYLISTS >>>>>>> */
+
+
+.playlistpadre {
+    display: flex;
+    flex-wrap: wrap;    
+    gap: 2em;
+    padding: 20px;    
+    justify-content: space-around;      
+    background-image: url(./imagenes/fondo1.jpg);
+    color: aliceblue;
+} 
+
+.playlist1 {
+    text-align: center;    
+}
+
+.iframe {   
+    
+    height: 300px;
+    width: 400px;
+    margin: 1px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px 3px black;    
+}
+
+
+
+/* >>>>> PAGINA CONTACTO <<<<<<< */
+
+
+.gridContacto {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: stretch;
+    
+
+}
+
+.formulario {
+    width: 45%;
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;  
+   
+}
+
+
+
+.formulario label {
+    float: left;
+    padding: 5px;
+    margin-right: 5px;
+
+
+}
+
+.formulario input{
+    width: 95%;
+
+}
+
+.mapa {
+    padding: 5px;
+    margin: 10px; 
+    border: 2px solid black;
+}
+ 
+
+
+/* <<<<<<<< Quienes somos >>>>>>>>>>>>> */
+
+.grilla_quienesomos {
+    display: grid;
+    grid-template-columns: 250px auto;
+    grid-template-rows: auto auto;
+    margin-top: 50px;  
+    gap: 2em;
+    padding: 20px;
+    background-image: url(./imagenes/fondo1.jpg);
+    background-size: cover;
+    
+    
+}
+
+.info_quienesomos {
+    grid-column: 1/3;
+    padding: 20px;
+    font-size: larger;
+}
+
+.img_quienesomos {
+    
+    width: 250px;
+    height: 250px;
+    border-radius: 8px;
+
+}
+
+.info_mumbles {
+    
+    align-self: center;
+    margin-left: 50px;
+    border: 4px solid rgba(28, 82, 59);    
+    color: antiquewhite;
+    box-shadow: 3px 3px 10px 3px rgb(0, 0, 0);
+    border-radius: 8px;
+    
+
+}
+
+.info_paulie {
+    
+    align-self: center;
+    margin-left: 50px;
+    border: 4px solid rgba(28, 82, 59);
+    color: antiquewhite;
+    box-shadow: 3px 3px 10px 3px rgb(0, 0, 0);
+    border-radius: 8px; }
+    
+
+/* >>>>>>> INDEX ><<<<<<<< */
+
+
+.titulo {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 500px;
+    background-image: url(./imagenes/fondo_index.jpg);
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;    
+    max-height: 150px;
+    max-width: 400px;
+    font-size: 60px;
+    color: antiquewhite;
+    border: 6px solid palegreen;        
+    border-radius: 10px;    
+    box-shadow: 3px 3px 16px palegreen;    
+    
+
+}
+
+.flex_index {
+    display: flex;
+    padding: 0;    
+    align-items: center;
+    margin: 0;
+    padding: 10px;
+    justify-content: space-evenly ;
+    background-color: black;
+    border: 10px solid seagreen;
+    
+    
+    
+}
+
+.flex_index div {
+    width: 400px;
+    text-align: center;
+    border: 3px solid rgba(144, 238, 144, 0.445);
+    height: 400px;
+    flex-wrap: wrap;    
+    color: whitesmoke;
+    
+    
+
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: teal;
+    width: fit-content;
+    
+    
+
+}
+
+.top5 {
+    background-color: rgba(17, 95, 17, 0.651);
+      
+
+}
+
+.top5 ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style-type: none;
+    text-align: start;
+    padding: 2px;
+}
+
+.top5 ul li {
+    padding: 20px;
+    
+    
+
+}
+
+.envivo {
+    background-color: rgba(46, 139, 86, 0.274);
+    
+     
+}
+
+
+.iconoredes {
+    
+    padding: 10px;   
+    width: 60px;
+    height: 60px;
+}
+
+.play {
+    padding-top: 100px;   
+    width: 100px;
+    height: 100px;
+
+}
+
+footer {
+    border-style: dashed;
+    background-color: rgb(218, 230, 215);
+    border-color: grey;
+    margin-top: 30px;
+   /*  margin-bottom: 10px; */
+    border-width: 1px;
+    padding: 10px;
+    margin: 10px;
+    
+}
+
+
+/* <<<<<<<<<<<<<<<<<<< MAS ESCUCHADOS >>>>>>>>>>>>> */
+
+
+.mas_escuchados {
+    padding-bottom: 20px;
+    font-size: large;
+    overflow: auto;
+    
+    
+}
+
+
+.mas_escuchados_canciones{
+    width: 120px;
+    padding: 20px;
+    display: flex;
+    border-style: groove;
+    text-align: center;
+    
+    
+    
+}
+
+.mas_escuchados_artistas{
+    width: 120px;
+    display: flex;
+    border-style: groove;
+    padding: 20px;   
+    text-align: center;
+
+    
+}
+
+
+    
+
+
+
+
+
+
+
+
+
