@@ -45,6 +45,7 @@ header label {
 .menu li {
     flex-grow: 1;
     border: solid 1px white;
+   
     
 
 
@@ -55,7 +56,7 @@ header label {
     margin: 10px;
     padding: 10px;
     text-decoration: none;
-    color: rgb(15, 21, 27);
+    color: whitesmoke;
     text-align: center; 
 } 
 
@@ -64,15 +65,19 @@ header label {
 
 label:hover {
     background: rgb(0, 0, 0, 0.3);
+    
 
 }
 
 .menu li:hover {
     background-color: rgb(0, 0, 0, 0.3);
+    transition-duration: 1s;    
+    
 }
 
 .menu li a:hover {
     color: rgb(38, 248, 143);
+    font-size: larger;
 }
 
 
@@ -276,7 +281,7 @@ h1 {
 }
 
 .flex_index div {
-    width: 400px;
+    width: 500px;
     text-align: center;
     border: 3px solid rgba(144, 238, 144, 0.445);
     height: 400px;
@@ -294,14 +299,25 @@ h1 {
     background-color: teal;
     width: fit-content;
     
-    
+}
+
+.redes:hover {
+    background-color: rgb(9, 172, 172);
+    transition-duration: 1s;
+    width: 600px;
 
 }
 
 .top5 {
     background-color: rgba(17, 95, 17, 0.651);
+    transition-duration: 1s;
       
 
+}
+
+.top5:hover {
+    background-color: rgba(26, 153, 26, 0.651);
+    width: 600px;
 }
 
 .top5 ul {
@@ -316,14 +332,22 @@ h1 {
 .top5 ul li {
     padding: 20px;
     
-    
 
 }
 
 .envivo {
     background-color: rgba(46, 139, 86, 0.274);
-    
+    transition-duration: 1s;
+
      
+}
+
+.envivo:hover {
+    background-color: rgba(31, 204, 106, 0.432);
+    width: 600px;
+    
+    
+
 }
 
 
@@ -332,6 +356,11 @@ h1 {
     padding: 10px;   
     width: 60px;
     height: 60px;
+}
+
+.iconoredes:hover {
+    width: 80px;
+    height: 80px;
 }
 
 .play {
