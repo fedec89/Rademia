@@ -238,6 +238,30 @@ label:hover {
 /* >>>>>>> INDEX ><<<<<<<< */
 
 
+
+.top5 ul li a {
+    text-decoration: none;
+    color: rgb(0, 255, 255);
+    font-size: 20px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+
+}
+
+.top5 ul li a:hover {
+    color: rgb(52, 7, 94);  
+    box-shadow: inset 125px 0 0 0 yellowgreen;
+    color:black;
+
+}
+
+.top5 ul li a:visited{
+    text-decoration: none;
+   
+
+}
+
+
+
 .titulo {
     display: grid;
     grid-template-columns: 1fr;
