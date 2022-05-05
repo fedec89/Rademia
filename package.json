@@ -1,0 +1,28 @@
+{
+  "dependencies": {
+    "download": "^8.0.0"
+  },
+  "name": "web-rademia",
+  "version": "1.0.0",
+  "description": "SASS",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss style.scss style.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedec89/Rademia.git"
+  },
+  "author": "Fedec89",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fedec89/Rademia/issues"
+  },
+  "homepage": "https://github.com/fedec89/Rademia#readme"
+}

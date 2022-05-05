@@ -1,0 +1,13 @@
+$redes: ( 
+    instagram: #c540e6,
+    spotify: #1DB954,
+    facebook: #4267B2,
+    
+);
+
+@each $red, $color in $redes {
+    .btn--#{$red}{
+        background-color: $color;
+        border-radius: 10px;
+    }
+}

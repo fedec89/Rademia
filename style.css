@@ -1,3 +1,26 @@
+.btn--instagram {
+  background-color: #c540e6;
+  border-radius: 10px; }
+
+.btn--spotify {
+  background-color: #1DB954;
+  border-radius: 10px; }
+
+.btn--facebook {
+  background-color: #4267B2;
+  border-radius: 10px; }
+
+.botones, .botones_mas {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: chartreuse;
+  border: 2px solid #0d1320;
+  border-radius: 8px;
+  padding: 3px; }
+
+.botones_mas {
+  color: #4c10da;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; }
+
 body {
   padding: 0;
   margin: 0;
@@ -232,6 +255,13 @@ h1 {
 .top5 ul li {
   padding: 20px; }
 
+/* .top5 ul li a {
+                /* font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: chartreuse;
+                border: 2px solid rgb(13, 19, 32);
+                border-radius: 8px;
+                padding: 3px;
+            } */
 .envivo {
   background-color: rgba(46, 139, 86, 0.274);
   transition-duration: 1s; }
@@ -242,8 +272,11 @@ h1 {
 
 .iconoredes {
   padding: 10px;
+  height: 60px;
   width: 60px;
-  height: 60px; }
+  /* height: 60px;
+    width: 60px;
+       */ }
 
 .iconoredes:hover {
   width: 80px;

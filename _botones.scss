@@ -1,0 +1,14 @@
+.botones {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: chartreuse;
+    border: 2px solid rgb(13, 19, 32);
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.botones_mas {
+    @extend.botones;
+    color: rgb(76, 16, 218);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
