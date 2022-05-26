@@ -92,7 +92,7 @@ header label {
 
 /* >>>>> EFECTOS <<<<<< */
 label:hover {
-  background: black;
+  background: rgba(0, 0, 0, 0.397);
 }
 
 .menu li:hover {

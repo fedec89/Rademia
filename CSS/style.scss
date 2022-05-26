@@ -50,6 +50,9 @@ header label {
 }
 
 
+
+
+
 .menu {
 
     ul {
@@ -81,11 +84,7 @@ header label {
 
 /* >>>>> EFECTOS <<<<<< */
 
-label:hover {
-    background: black;
 
-
-}
 
 .menu li:hover {
     background-color: black;
@@ -275,7 +274,7 @@ label:hover {
 .top5 ul li a:hover {
 
     box-shadow: inset 125px 0 0 0 $color__borde;
-    
+
 
 }
 
@@ -479,8 +478,8 @@ footer {
     background-color: rgba(42, 216, 216, 0.329);
     border-radius: 8px;
     border: 3px $color__borde solid;
-    
-    
+
+
 
 }
 
@@ -522,10 +521,10 @@ footer {
 }
 
 .iframe_mapa {
-    
+
     border: 2px solid $color__borde;
     background-color: $color__fondo;
-    
-    
+
+
 
 }
