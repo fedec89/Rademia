@@ -1,4 +1,4 @@
- .btn--instagram {
+.btn--instagram {
   background-color: #c540e6;
   border-radius: 10px;
 }
@@ -15,15 +15,22 @@
 
 .botones, .botones_mas {
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: chartreuse;
-  border: 2px solid #0d1320;
+  color: Whitesmoke;
+  border: 3px solid #0d1320;
   border-radius: 8px;
   padding: 3px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.botones:hover, .botones_mas:hover {
+  color: black;
 }
 
 .botones_mas {
-  color: #4c10da;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: lightgreen;
+  border: 0px;
+  text-decoration: none;
 }
 
 body {
@@ -39,6 +46,9 @@ header {
 
 h2 {
   text-align: center;
+  background-color: #507255;
+  border-color: #C5E063;
+  margin: 0px 0px 0px 0px;
 }
 
 #menuresp {
@@ -76,6 +86,8 @@ header label {
   text-decoration: none;
   color: Whitesmoke;
   text-align: center;
+  font-size: larger;
+  font-weight: bold;
 }
 
 /* >>>>> EFECTOS <<<<<< */
@@ -128,8 +140,9 @@ label:hover {
       flex-wrap: wrap;
   gap: 2em;
   padding: 20px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   background-image: url(../imagenes/fondo1.jpg);
   color: Whitesmoke;
 }
@@ -157,13 +170,15 @@ label:hover {
   -webkit-box-pack: stretch;
       -ms-flex-pack: stretch;
           justify-content: stretch;
+  background-image: url(../imagenes/fondo1.jpg);
 }
 
 .formulario {
   width: 45%;
-  border: 2px solid black;
+  border: 2px solid #C5E063;
   padding: 5px;
   margin: 10px;
+  color: Whitesmoke;
 }
 
 .formulario label {
@@ -179,7 +194,7 @@ label:hover {
 .mapa {
   padding: 5px;
   margin: 10px;
-  border: 2px solid black;
+  border: 2px solid #C5E063;
 }
 
 /* <<<<<<<< Quienes somos >>>>>>>>>>>>> */
@@ -190,7 +205,7 @@ label:hover {
       grid-template-columns: 250px auto;
   -ms-grid-rows: auto auto;
       grid-template-rows: auto auto;
-  margin-top: 50px;
+  border: 5px solid #C5E063;
   gap: 2em;
   padding: 20px;
   background-image: url(../imagenes/fondo1.jpg);
@@ -201,14 +216,17 @@ label:hover {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
-  padding: 20px;
+  padding: 40px;
   font-size: larger;
+  background-color: #C5E063;
 }
 
 .img_quienesomos {
+  padding: 2px;
   width: 250px;
   height: 250px;
   border-radius: 8px;
+  border: 3px solid #C5E063;
 }
 
 .info_mumbles {
@@ -220,7 +238,7 @@ label:hover {
   color: antiquewhite;
   -webkit-box-shadow: 3px 3px 10px 3px black;
           box-shadow: 3px 3px 10px 3px black;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 .info_paulie {
@@ -237,9 +255,6 @@ label:hover {
 
 /* >>>>>>> INDEX ><<<<<<<< */
 .top5 ul li a {
-  text-decoration: none;
-  color: Whitesmoke;
-  font-size: 20px;
   -webkit-transition: color .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
   transition: color .3s ease-in-out, -webkit-box-shadow .3s ease-in-out;
   transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -247,13 +262,21 @@ label:hover {
 }
 
 .top5 ul li a:hover {
-  -webkit-box-shadow: inset 125px 0 0 0 yellowgreen;
-          box-shadow: inset 125px 0 0 0 yellowgreen;
-  color: black;
+  -webkit-box-shadow: inset 125px 0 0 0 #C5E063;
+          box-shadow: inset 125px 0 0 0 #C5E063;
 }
 
 .top5 ul li a:visited {
   text-decoration: none;
+}
+
+.top5 ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .titulo {
@@ -339,7 +362,7 @@ h1 {
 }
 
 .top5 {
-  background-color: rgba(17, 95, 17, 0.651);
+  background-color: rgba(10, 177, 85, 0.651);
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
 }
@@ -409,8 +432,7 @@ h1 {
 footer {
   border-style: dashed;
   background-color: #507255;
-  border-color: grey;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   /*  margin-bottom: 10px; */
   border-width: 1px;
   padding: 10px;
@@ -433,11 +455,9 @@ footer {
 }
 
 .col ul li:hover {
-  background-color: lightgreen;
+  background-color: rgba(42, 216, 216, 0.329);
   border-radius: 8px;
-  border: 3px black dotted;
-  -webkit-transform: skew(-10deg);
-          transform: skew(-10deg);
+  border: 3px #C5E063 solid;
 }
 
 .col {
@@ -445,8 +465,27 @@ footer {
 }
 
 .h2_masescuchados {
-  border-radius: 10px;
   background-color: #507255;
   padding: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.p_general {
+  font-size: larger;
+  border: 5px solid #C5E063;
+  background-color: #507255;
+  margin: 0;
+  padding: 10px;
+}
+
+.container2 {
+  background-image: url(../imagenes/fondo1.jpg);
+}
+
+.iframe_mapa {
+  border: 2px solid #C5E063;
+  background-color: #507255;
 }
 /*# sourceMappingURL=style.css.map */

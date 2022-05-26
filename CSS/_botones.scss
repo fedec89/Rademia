@@ -1,14 +1,25 @@
 .botones {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: chartreuse;
-    border: 2px solid rgb(13, 19, 32);
+    color: $color__letra;
+    border: 3px solid rgb(13, 19, 32);
     border-radius: 8px;
     padding: 3px;
+    font-size: 20px;
+    text-decoration: none;
+    
+    
+}
+
+
+.botones:hover {
+    color: black
 }
 
 .botones_mas {
     @extend.botones;
-    color: rgb(76, 16, 218);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: $color__boton;
+    border: 0px;
+    text-decoration: none;
+    
     
 }
